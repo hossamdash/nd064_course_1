@@ -11,3 +11,4 @@ resources_requests:
 configmap_data: "version: 1.18.0"
 
 
+service_port: 8080
