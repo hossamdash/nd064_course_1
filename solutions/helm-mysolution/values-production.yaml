@@ -1,0 +1,13 @@
+namespace: prod
+
+replicaCount: 2
+
+image:
+  tag: 1.17.0
+
+resources_requests:
+  cpu: 70m
+
+configmap_data: "version: 1.17.0"
+
+

@@ -1,0 +1,18 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-staging
+spec:
+  project: default
+  source:
+    helm: 
+      valueFiles: 
+        - values-staging.yaml
+    repoURL: https://github.com/hossamdash/nd064_course_1
+    targetRevision: HEAD
+    path: solutions/helm-mysolution
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy: {}
