@@ -8,6 +8,8 @@ image:
 resources_requests:
   cpu: 70m
 
+service_port: 80
+
 configmap_data: "version: 1.17.0"
 
 
