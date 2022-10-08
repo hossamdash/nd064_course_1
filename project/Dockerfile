@@ -1,7 +1,7 @@
 FROM python:3.8
 LABEL maintaner="Hossam Mostafa"
 
-ADD ./techtrends /app
+ADD ./project/techtrends /app
 WORKDIR /app
 EXPOSE 3111
 
